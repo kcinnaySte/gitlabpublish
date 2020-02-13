@@ -5,7 +5,7 @@ MAINTAINER Yannick Stein <y@nnick.me>
 
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh grep tzdata
+    apk add --no-cache bash git openssh grep tzdata curl jq
 
 RUN cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 RUN echo "Europe/Berlin" >  /etc/timezone
